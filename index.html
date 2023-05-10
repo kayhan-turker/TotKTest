@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  
+  <title>TotK Inverted Time Remaining</title>
+  <link rel="icon" type="image/png" href="icon_med.png">
+  <style>
+
+    body {
+      background-image: url('background-3a.jpg');
+      background-position: center center;
+      position: relative;
+      height:100vh;
+      width:100vw;
+      overflow-y: scroll;
+    }
+
+    .header {
+      position: absolute;
+      top: 60px;
+      left: 40px;
+      font-size: 96px;
+      white-space: nowrap;
+    }
+
+    .sub-header {
+      position: absolute;
+      top: 185px;
+      left: 40px;
+      font-size: 58px;
+      white-space: nowrap;
+    }
+
+    .countdown {
+      position: absolute;
+      top: 406px;
+      left: 40px;
+      font-size: 52px;
+      white-space: nowrap;
+    }
+
+    .inverted {
+      position: absolute;
+      top: 540px;
+      left: 40px;
+      font-size: 52px;
+      white-space: nowrap;
+    }
+
+    .invertedDark {
+      font-size: 52px;
+    }
+
+    .details {
+      position: absolute;
+      top: 620px;
+      left: 40px;
+      font-size: 38px;
+      white-space: nowrap;
+    }
+
+    .font-color {
+      color: #41b081;
+      text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333;
+    }
+
+    .font-trans {
+      opacity: 0.58;
+    }
+
+    .image-moon {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    .image-moon-red {
+      opacity: 0;
+    }
+
+    .image-done {
+      background-image: url('totk-done-back.jpg');
+      background-size: cover;
+      background-position: center center;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      opacity: 0%;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="header font-color">
+    Inverted Countdown
+  </div>
+
+  <div class="sub-header font-color">
+    Until the Release of <br> 
+    Tears of the Kingdom
+  </div> 
+
+  <div class="countdown font-color">
+    <span id="timeLeft"></span>
+  </div> 
+
+  <div class="inverted">
+    <span id="invertedPercent" class="font-color"></span><span id="invertedPercentLastTwo" class="invertedDark font-color font-trans"></span>
+  </div> 
+
+  <div class="details font-color">
+    <span id="description"></span>
+  </div> 
+
+
+  <img src="moon-large-2.png" class="image-moon" id="moon">
+  <img src="moon-large-2a.png" class="image-moon image-moon-red" id="moon-red">
+  <div class="image-done" id="image-done"></div>
+
+  <script src="script.js"></script> 
+</body>
+</html>

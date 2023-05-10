@@ -10,12 +10,12 @@ function updateTimer() {
 
     // Calculate the time difference
 
-    var now = new Date("May 11, 2023 12:00:00");
+    var now = new Date("May 11, 2023 23:59:30");
     var targetDate = new Date("May 12, 2023 12:00:00");
     var timeDifference = targetDate - now - (12 * 60 * 60 + 60 * 60 * 24 * skipTime) * 1000;
     timeDifference = (timeDifference / (1000 * 60 * 60 * 24));
 
-    skipTime += 0.0004;
+    skipTime += 0.0000001;//0.0004;
 
     // Update description
 
@@ -78,7 +78,7 @@ function updateTimerSlow() {
 
     // Calculate the time difference
 
-    var now = new Date("May 11, 2023 12:00:00");
+    var now = new Date("May 11, 2023 23:59:30");
     var targetDate = new Date("May 12, 2023 12:00:00");
     var timeDifference = targetDate - now - (12 * 60 * 60 + 60 * 60 * 24 * skipTime) * 1000;
     timeDifference = (timeDifference / (1000 * 60 * 60 * 24));

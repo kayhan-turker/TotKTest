@@ -264,4 +264,4 @@ updateTimer();
 updateTimerSlow();
 
 setInterval(updateTimer, 10);
-setInterval(updateTimerSlow, 100);
+setInterval(updateTimerSlow, 50);
